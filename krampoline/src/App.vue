@@ -4,11 +4,10 @@ import Home from './Home.vue'
 import About from './About.vue'
 import NotFound from './NotFound.vue'
 
-const staticServerUri = process.env.REACT_APP_PATH || "";    
     
 const routes = {}
-routes[ staticServerUri + "/" ] = Home;
-routes[ staticServerUri + "/about" ] = About;
+routes[ "/" ] = Home;
+routes[ "/about" ] = About;
 
 const currentPath = ref(window.location.hash)
 
