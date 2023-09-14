@@ -12,4 +12,4 @@ WORKDIR /usr/src/app
 COPY --from=build /usr/src/app/dist ./dist
 RUN npm install -g serve
 EXPOSE 3000
-CMD ["serve", "dist"]
+CMD ["serve", "-s" ,"dist"]
